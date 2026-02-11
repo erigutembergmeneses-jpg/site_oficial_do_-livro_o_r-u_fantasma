@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Réu Fantasma · Justiça Neurocompatível</title>
-    <!-- Fonte elegante e conceitual -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome 6 (ícones) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -16,8 +14,8 @@
         }
 
         body {
-            background-color: #fdf1e6;        /* tom de off-white quente, base da capa */
-            color: #3e2c23;                   /* marrom profundo herdado da capa */
+            background-color: #DFD3C2;  /* ✅ COR EXATA DA CAPA: bege acinzentado terroso */
+            color: #3A2C24;
             font-family: 'Inter', sans-serif;
             font-weight: 300;
             line-height: 1.7;
@@ -36,11 +34,11 @@
             padding: 0 2rem;
         }
 
-        /* header com a cor terracota/salmão queimado da capa */
+        /* HEADER: laranja-queimado forte da capa */
         header {
-            background: rgba(224, 120, 80, 0.92);  /* #e07850 – laranja-queimado característico */
+            background: #C1562B;  /* laranja terroso vibrante da capa */
             backdrop-filter: blur(4px);
-            border-bottom: 1px solid rgba(130, 60, 40, 0.25);
+            border-bottom: 1px solid #A14524;
             padding: 1.2rem 0;
             position: sticky;
             top: 0;
@@ -60,13 +58,11 @@
             color: white;
             letter-spacing: -0.02em;
             text-decoration: none;
-            border-bottom: 2px solid transparent;
-            transition: border 0.2s;
-            text-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            text-shadow: 0 1px 3px rgba(0,0,0,0.2);
         }
 
         .logo i {
-            color: #ffddb0;                  /* tom claro para contraste */
+            color: #FFEAD2;
             font-size: 1.6rem;
             margin-right: 0.3rem;
         }
@@ -87,14 +83,15 @@
         }
 
         .nav-link:hover {
-            border-bottom-color: #fff7e6;
-            color: #ffeede;
+            border-bottom-color: #FFF2D8;
+            color: #FFF2D8;
         }
 
+        /* HERO: gradiente suave partindo da cor da capa */
         .hero {
             padding: 5rem 0 3rem 0;
-            background: linear-gradient(to bottom, #fae1d2, #fdf1e6); /* degradê suave com o tom da capa */
-            border-bottom: 1px solid #e6cbbc;
+            background: linear-gradient(to bottom, #E3D6C6, #DFD3C2); /* respeitando a cor base */
+            border-bottom: 1px solid #C8B9A8;
         }
 
         .hero-grid {
@@ -108,52 +105,50 @@
             font-size: 3.8rem;
             font-weight: 700;
             line-height: 1.1;
-            color: #8a3f2e;                /* bordô/vinho da capa – contraste com o laranja */
+            color: #6F2E1F;  /* vinho/bordô profundo da capa */
             margin-bottom: 1rem;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.02);
         }
 
         .hero-sub {
             font-size: 1.5rem;
             font-weight: 400;
-            color: #b1553a;                /* terracota médio */
+            color: #B44C2E;
             font-family: 'Cormorant Garamond', serif;
             font-style: italic;
             margin-bottom: 1.8rem;
-            border-left: 4px solid #c5674a;
+            border-left: 4px solid #C1562B;
             padding-left: 1.2rem;
         }
 
         .hero-text {
             font-size: 1.15rem;
-            color: #3e2c23;
+            color: #3A2C24;
             margin-bottom: 2.5rem;
         }
 
         .btn {
             display: inline-block;
-            background-color: #8a3f2e;      /* vinho/bordô da capa */
+            background-color: #6F2E1F;
             color: white;
             padding: 0.8rem 2.2rem;
             font-size: 1rem;
             font-weight: 500;
             border-radius: 40px;
             text-decoration: none;
-            border: 1px solid #8a3f2e;
+            border: 1px solid #6F2E1F;
             transition: 0.2s;
-            letter-spacing: 0.5px;
         }
 
         .btn-outline {
             background: transparent;
-            color: #8a3f2e;
-            border: 1px solid #8a3f2e;
+            color: #6F2E1F;
+            border: 1px solid #6F2E1F;
             margin-left: 1rem;
         }
 
         .btn:hover {
-            background-color: #6b3123;
-            border-color: #6b3123;
+            background-color: #542318;
+            border-color: #542318;
             color: white;
         }
 
@@ -161,23 +156,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            position: relative;
         }
 
         .basil-icon {
             font-size: 12rem;
-            color: #b86b4b;               /* laranja-queimado queimado, remetendo à capa */
-            opacity: 0.6;
-            text-shadow: 0 8px 20px rgba(170, 90, 50, 0.15);
-        }
-
-        .basil-icon i {
-            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05));
+            color: #B85731;
+            opacity: 0.7;
+            text-shadow: 0 8px 20px rgba(193,86,43,0.15);
         }
 
         .section {
             padding: 5rem 0;
-            border-bottom: 1px solid #e6d6cc;
+            border-bottom: 1px solid #C8BBAC;
         }
 
         .section:last-child {
@@ -187,42 +177,41 @@
         .section-title {
             font-size: 2.8rem;
             font-weight: 700;
-            color: #6b382a;               /* bordô profundo */
+            color: #6F2E1F;
             margin-bottom: 1.5rem;
-            letter-spacing: -0.01em;
-            border-bottom: 2px solid #dcb6a5;
+            border-bottom: 2px solid #C8B19C;
             display: inline-block;
             padding-bottom: 0.3rem;
         }
 
-        .grid-2, .grid-3 {
+        .grid-2 {
             display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: 3rem;
         }
 
-        .grid-2 {
-            grid-template-columns: 1fr 1fr;
-        }
-
         .grid-3 {
+            display: grid;
             grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
         }
 
+        /* CARDS: fundo levemente mais claro, mas ainda na paleta */
         .card {
-            background: #fffaf5;           /* off-white quente como o fundo da capa */
+            background: #F0E7DD;
             padding: 2rem;
             border-radius: 24px;
-            box-shadow: 0 6px 18px rgba(130, 60, 40, 0.05);
-            border: 1px solid #edd9cf;
-            transition: all 0.2s;
+            box-shadow: 0 6px 18px rgba(80, 50, 35, 0.08);
+            border: 1px solid #D6C5B6;
+            transition: 0.2s;
         }
 
         .card:hover {
-            box-shadow: 0 12px 28px rgba(170, 90, 50, 0.12);
+            box-shadow: 0 12px 28px rgba(193,86,43,0.12);
         }
 
         .card i {
-            color: #b1553a;              /* terracota */
+            color: #C1562B;
             font-size: 2rem;
             margin-bottom: 1.2rem;
         }
@@ -231,31 +220,24 @@
             font-size: 1.8rem;
             font-weight: 600;
             margin-bottom: 0.8rem;
-            color: #5e3529;
-        }
-
-        .manifest-card {
-            background: #f3e3db;           /* tom de terra suave */
-            border-left: 8px solid #b1553a;
-            padding: 2.5rem;
-            font-style: italic;
+            color: #542318;
         }
 
         .footer {
-            background: #6b382a;           /* vinho escuro, como o título da capa */
-            color: #fbede5;
+            background: #6F2E1F;
+            color: #F7EDE4;
             padding: 3rem 0;
             margin-top: 2rem;
         }
 
         .footer a {
-            color: #ffdccb;
+            color: #FFDCC2;
             text-decoration: none;
-            border-bottom: 1px dotted #eaa68b;
+            border-bottom: 1px dotted #E1997A;
         }
 
         .pill {
-            background: #b1553a;           /* laranja-queimado da capa nos selos */
+            background: #C1562B;
             color: white;
             font-size: 0.75rem;
             padding: 0.2rem 0.9rem;
@@ -269,38 +251,17 @@
 
         .timeline-item {
             padding-left: 2rem;
-            border-left: 2px solid #d69982;
+            border-left: 2px solid #C98A70;
             margin-bottom: 1.8rem;
-        }
-
-        .small-note {
-            font-size: 0.9rem;
-            color: #6e4e42;
-            margin-top: 0.5rem;
         }
 
         @media (max-width: 900px) {
             .hero-grid, .grid-2, .grid-3 { grid-template-columns: 1fr; }
-            .hero-title { font-size: 2.8rem; }
-            .nav-links { display: none; } /* mobile omitido para foco na identidade visual */
-        }
-
-        /* cor de destaque para o manjericão – agora alinhado à paleta da capa */
-        .accent-bg {
-            background-color: #f0dad2;
-        }
-
-        .border-capa {
-            border-color: #c5674a;
-        }
-        
-        .capa-color {
-            color: #8a3f2e;
+            .nav-links { display: none; }
         }
     </style>
 </head>
 <body>
-    <!-- cabeçalho com a cor da capa: laranja queimado/terracota -->
     <header>
         <div class="container header-flex">
             <a href="#" class="logo"><i class="fas fa-leaf"></i> Réu Fantasma</a>
@@ -315,234 +276,181 @@
         </div>
     </header>
 
-    <!-- HERO com identidade visual da capa (laranja queimado + vinho) -->
+    <!-- HERO: fundo exato da capa #DFD3C2 mantido no gradiente -->
     <section class="hero">
         <div class="container hero-grid">
             <div>
-                <span class="pill" style="background: #8a3f2e;">Romance-ensaio jurídico</span>
+                <span class="pill" style="background: #6F2E1F;">Romance-ensaio jurídico</span>
                 <h1 class="hero-title">O Réu Fantasma</h1>
                 <div class="hero-sub">Justiça Neurocompatível e o Direito de Recomeçar</div>
                 <p class="hero-text">Um cérebro reconfigurado. 58 minutos sem oxigênio. O réu que volta sem memória, sem culpa, sem o "eu" que cometeu o crime. O sistema penal diante do seu próprio fantasma: a ficção do imutável. Ensaio encarnado, experimento ético, manifesto latino-americano.</p>
-                <a href="#" class="btn"><i class="fas fa-book-open"></i> &nbsp;Ler fragmentos</a>
-                <a href="#autor" class="btn btn-outline"><i class="fas fa-user"></i> &nbsp;Erigutemberg Meneses</a>
+                <a href="#" class="btn"><i class="fas fa-book-open"></i> Ler fragmentos</a>
+                <a href="#autor" class="btn btn-outline"><i class="fas fa-user"></i> Erigutemberg Meneses</a>
             </div>
             <div class="hero-image">
                 <div class="basil-icon">
                     <i class="fas fa-leaf"></i>
-                    <p style="font-size: 1rem; font-family: 'Inter'; margin-top: 0.5rem; color: #b1553a; font-weight: 400;">“cultivada com empatia, leveza e presença”</p>
+                    <p style="font-size: 1rem; font-family: 'Inter'; margin-top: 0.5rem; color: #9B4A2D; font-weight: 400;">“cultivada com empatia, leveza e presença”</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- O LIVRO: apresentação híbrida, com tons da capa -->
+    <!-- LIVRO -->
     <section id="livro" class="container section">
         <h2 class="section-title">Ensaio encarnado</h2>
         <div class="grid-2" style="margin-top: 2rem;">
             <div>
-                <p style="font-size: 1.3rem; font-weight: 400; color: #8a3f2e; font-family: 'Cormorant Garamond';"><i>“Não é apenas um livro. É um ato de coragem epistemológica.”</i> — Editora Dialética</p>
-                <p style="margin: 1.5rem 0 1rem; font-size: 1.1rem;">Daniel Rojas, durante uma audiência, sofre parada cardíaca. Declarado morto, permanece 58 minutos sem atividade cerebral. Submetido ao protocolo experimental NeuroSol‑γ, retorna. Sem memória autobiográfica. Sem a personalidade que cometeu o crime. Um novo sujeito habita o corpo do agressor. A lei, porém, ainda vê o réu de ontem.</p>
-                <p style="font-size: 1.1rem;"><strong>O Réu Fantasma</strong> não ilustra o direito: interroga-o. Cada capítulo narrativo é um experimento ético; cada ensaio jurídico, uma resposta institucional possível. Uma tradição que vai de Montesquieu a Mangabeira Unger, agora ancorada na neurociência e na justiça restaurativa indígena.</p>
-                <div style="margin-top: 2rem; background: #f8eae4; padding: 1.5rem; border-radius: 16px; border-left: 8px solid #b86b4b;">
-                    <i class="fas fa-quote-right" style="color: #a1533a; font-size: 1.8rem; opacity: 0.6;"></i>
-                    <p style="font-size: 1.1rem; font-style: italic; margin-top: 0.5rem;">“O réu está presente. Mas o culpado morreu antes do julgamento.”</p>
+                <p style="font-size: 1.3rem; font-weight: 400; color: #6F2E1F; font-family: 'Cormorant Garamond';"><i>“Não é apenas um livro. É um ato de coragem epistemológica.”</i> — Editora Dialética</p>
+                <p style="margin: 1.5rem 0 1rem;">Daniel Rojas, durante audiência, sofre parada cardíaca. Declarado morto, permanece 58 minutos sem atividade cerebral. Submetido ao protocolo experimental NeuroSol‑γ, retorna. Sem memória autobiográfica. Sem a personalidade que cometeu o crime. Um novo sujeito habita o corpo do agressor. A lei, porém, ainda vê o réu de ontem.</p>
+                <p><strong>O Réu Fantasma</strong> não ilustra o direito: interroga-o. Cada capítulo narrativo é um experimento ético; cada ensaio jurídico, uma resposta institucional possível.</p>
+                <div style="margin-top: 2rem; background: #F0E5DA; padding: 1.5rem; border-radius: 16px; border-left: 8px solid #C1562B;">
+                    <i class="fas fa-quote-right" style="color: #B44C2E; font-size: 1.8rem; opacity: 0.6;"></i>
+                    <p style="font-size: 1.1rem; font-style: italic;">“O réu está presente. Mas o culpado morreu antes do julgamento.”</p>
                 </div>
             </div>
             <div>
-                <div style="background: #fffaf5; border-radius: 20px; padding: 2rem; box-shadow: 0 4px 14px rgba(170,90,50,0.06); border: 1px solid #e1cbbc;">
-                    <i class="fas fa-brain" style="font-size: 2.4rem; color: #b86b4b;"></i>
-                    <h3 style="font-size: 1.9rem; font-family: 'Cormorant Garamond'; margin: 0.8rem 0 0.3rem; color: #5e3529;">neuroplasticidade radical</h3>
-                    <p style="font-size: 0.95rem; color: #4d3a32;">Lesão hipocampal bilateral · Amnésia retrógrada total · Hiperatividade do córtex cingulado anterior – a empatia que emerge quando o “eu” se dissolve.</p>
-                    <hr style="margin: 2rem 0; border: 0.5px solid #e5d1c6;">
-                    <i class="fas fa-scale-balanced" style="font-size: 2rem; color: #b86b4b;"></i>
-                    <h3 style="font-size: 1.9rem; font-family: 'Cormorant Garamond'; margin: 0.8rem 0 0.3rem; color: #5e3529;">o direito de recomeçar</h3>
-                    <p style="font-size: 0.95rem; color: #4d3a32;">Se a identidade é um rio, não um monumento — a pena perde a finalidade. A justiça neurocompatível não pune fantasmas; cuida de possibilidades.</p>
+                <div style="background: #F0E7DD; border-radius: 20px; padding: 2rem; border: 1px solid #D2BFB0;">
+                    <i class="fas fa-brain" style="font-size: 2.4rem; color: #C1562B;"></i>
+                    <h3 style="font-size: 1.9rem; font-family: 'Cormorant Garamond'; margin: 0.8rem 0 0.3rem; color: #542318;">neuroplasticidade radical</h3>
+                    <p style="font-size: 0.95rem;">Lesão hipocampal bilateral · Amnésia retrógrada total · Hiperatividade do córtex cingulado anterior – a empatia que emerge quando o “eu” se dissolve.</p>
+                    <hr style="margin: 2rem 0; border: 0.5px solid #D2BFB0;">
+                    <i class="fas fa-scale-balanced" style="font-size: 2rem; color: #C1562B;"></i>
+                    <h3 style="font-size: 1.9rem; font-family: 'Cormorant Garamond'; margin: 0.8rem 0 0.3rem; color: #542318;">o direito de recomeçar</h3>
+                    <p style="font-size: 0.95rem;">Se a identidade é um rio, não um monumento — a pena perde a finalidade. A justiça neurocompatível não pune fantasmas; cuida de possibilidades.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- AUTOR: ERIGUTEMBERG MENESES – com o texto da capa -->
+    <!-- AUTOR -->
     <section id="autor" class="container section">
         <h2 class="section-title">Erigutemberg Meneses</h2>
         <div class="grid-2" style="gap: 3rem;">
             <div>
-                <p style="font-size: 1.3rem; font-family: 'Cormorant Garamond'; font-weight: 600; color: #6b382a;">Advogado, economista, escritor e arquiteto narrativo de experiências éticas.</p>
-                <p style="margin: 1.4rem 0;">Autor de mais de trinta livros, transita entre poesia, ensaio jurídico e ficção neurojurídica, gênero que ajudou a fundar ao entrelaçar neurociência, direitos humanos e literatura de resistência. Entre suas obras destacam-se <em>O Eclipse Perpétuo</em> (Clube de Autores, 2025) e <em>O Estado da Serenidade</em> (Dialética Literária, 2025).</p>
-                <p><strong>O Réu Fantasma</strong> não é um livro sobre um homem que morreu e voltou. É um protocolo ético disfarçado de ficção, o primeiro romance capaz de gerar efeitos reais no sistema de justiça. Esta é a primeira obra brasileira a integrar, de forma estrutural, neurociência clínica (fMRI, EEG, protocolos pós-hipóxia); direito constitucional prospectivo (extinção da punibilidade por dissolução da pessoa jurídica) e ética da escuta ativa.</p>
+                <p style="font-size: 1.3rem; font-family: 'Cormorant Garamond'; font-weight: 600; color: #6F2E1F;">Advogado, economista, escritor e arquiteto narrativo de experiências éticas.</p>
+                <p style="margin: 1.4rem 0;">Autor de mais de trinta livros, transita entre poesia, ensaio jurídico e ficção neurojurídica, gênero que ajudou a fundar ao entrelaçar neurociência, direitos humanos e literatura de resistência. Entre suas obras destacam-se <em>O Eclipse Perpétuo</em> (2025) e <em>O Estado da Serenidade</em> (2025).</p>
+                <p><strong>O Réu Fantasma</strong> é um protocolo ético disfarçado de ficção, a primeira obra brasileira a integrar, de forma estrutural, neurociência clínica (fMRI, EEG, protocolos pós-hipóxia); direito constitucional prospectivo (extinção da punibilidade por dissolução da pessoa jurídica) e ética da escuta ativa.</p>
                 <div style="margin-top: 2rem;">
-                    <span style="background: #8a3f2e; color: white; padding: 0.3rem 1rem; border-radius: 30px; font-size: 0.85rem;">Idealizador do Núcleo de Justiça Neurocompatível</span>
-                    <span style="background: #e7d3c9; color: #4d3028; margin-left: 1rem; padding: 0.3rem 1rem; border-radius: 30px; font-size: 0.85rem;">Pesquisador em Neurodireito</span>
+                    <span style="background: #6F2E1F; color: white; padding: 0.3rem 1rem; border-radius: 30px; font-size: 0.85rem;">Idealizador do Núcleo de Justiça Neurocompatível</span>
+                    <span style="background: #DBCBC0; color: #3A2C24; margin-left: 1rem; padding: 0.3rem 1rem; border-radius: 30px; font-size: 0.85rem;">Pesquisador em Neurodireito</span>
                 </div>
             </div>
-            <div style="background: #f8e6de; border-radius: 32px; padding: 2.2rem; text-align: center; border: 1px solid #ddb8ab;">
-                <i class="fas fa-feather" style="font-size: 3.8rem; color: #b86b4b; margin-bottom: 1rem;"></i>
-                <p style="font-size: 1.8rem; font-family: 'Cormorant Garamond'; font-weight: 700; line-height: 1.2; color: #6b382a;">“Não proponho o fim da responsabilidade. Proponho sua reinvenção.”</p>
+            <div style="background: #F0E5DA; border-radius: 32px; padding: 2.2rem; text-align: center; border: 1px solid #D2BFB0;">
+                <i class="fas fa-feather" style="font-size: 3.8rem; color: #C1562B; margin-bottom: 1rem;"></i>
+                <p style="font-size: 1.8rem; font-family: 'Cormorant Garamond'; font-weight: 700; line-height: 1.2; color: #6F2E1F;">“Não proponho o fim da responsabilidade. Proponho sua reinvenção.”</p>
                 <p style="margin-top: 1.5rem; font-style: italic;">— Erigutemberg Meneses, Blumenau, nov/2025</p>
             </div>
         </div>
     </section>
 
-    <!-- PERSONAGENS: com a paleta da capa -->
+    <!-- PERSONAGENS -->
     <section id="personagens" class="container section">
         <h2 class="section-title">Os que habitam o limiar</h2>
         <div class="grid-3" style="margin-top: 2rem;">
-            <div class="card">
-                <i class="fas fa-user"></i>
-                <h3>Daniel / Tiago</h3>
-                <p style="font-size: 0.96rem;">O réu que morreu clinicamente e voltou sem memória. Hipocampo destruído. Empatia hiperativa. Escolhe chamar-se Tiago: “preciso de um nome para existir sem ser julgado”.</p>
-                <p style="margin-top: 1rem; font-style: italic; color: #b1553a;">“Não sei quem fui. Mas sei que não posso ser Daniel.”</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-leaf"></i>
-                <h3>Camila Ferreira</h3>
-                <p>A vítima que se recusa a ser redentora. Coordena oficinas de escuta ativa. Não perdoa, não esquece — mas não alimenta o fantasma com sua voz. “A justiça começa quando paramos de exigir que as vítimas nos ensinem a ter esperança.”</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-hand-holding-heart"></i>
-                <h3>Mateus</h3>
-                <p>Adolescente em conflito com a lei, filho de pai violento. Na oficina do Núcleo, encontra Daniel. Descobre que a violência era um grito sem palavras. Torna-se facilitador. “A mudança não é perfeita. É diária.”</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-gavel"></i>
-                <h3>Dra. Mariana Alencar</h3>
-                <p>Juíza da 1ª Vara Criminal de Blumenau. Extingue a punibilidade com base na dissolução da identidade jurídica. “Se o Direito não ousar acompanhar a vida, torna-se monumento ao passado.”</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-balance-scale"></i>
-                <h3>Rodrigo Menezes</h3>
-                <p>Promotor que temia o futuro. Diante dos laudos e do encontro silencioso, pede perdão ao próprio filho. A ciência avançou mais rápido que a dogmática; o direito soube esperar.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-hospital-user"></i>
-                <h3>Dr. Emiliano Vargas</h3>
-                <p>Neurologista. “Se o Direito julga o sujeito, e o sujeito desaparece… quem responde? O cérebro que foi? O corpo que restou? Ou o silêncio entre os dois?”</p>
-            </div>
+            <div class="card"><i class="fas fa-user"></i><h3>Daniel / Tiago</h3><p>O réu que morreu clinicamente e voltou sem memória. Hipocampo destruído. Empatia hiperativa. “Preciso de um nome para existir sem ser julgado.”</p></div>
+            <div class="card"><i class="fas fa-leaf"></i><h3>Camila Ferreira</h3><p>A vítima que se recusa a ser redentora. Coordena oficinas de escuta ativa. “A justiça começa quando paramos de exigir que as vítimas nos ensinem a ter esperança.”</p></div>
+            <div class="card"><i class="fas fa-hand-holding-heart"></i><h3>Mateus</h3><p>Adolescente em conflito com a lei. Descobre que a violência era “um grito sem palavras”. Torna-se facilitador. “A mudança não é perfeita. É diária.”</p></div>
+            <div class="card"><i class="fas fa-gavel"></i><h3>Dra. Mariana Alencar</h3><p>Juíza. Extingue a punibilidade com base na dissolução da identidade jurídica. “Se o Direito não ousar acompanhar a vida, torna-se monumento ao passado.”</p></div>
+            <div class="card"><i class="fas fa-balance-scale"></i><h3>Rodrigo Menezes</h3><p>Promotor. Diante dos laudos e do encontro silencioso, pede perdão ao próprio filho. “A ciência avançou mais rápido que a dogmática.”</p></div>
+            <div class="card"><i class="fas fa-hospital-user"></i><h3>Dr. Emiliano Vargas</h3><p>Neurologista. “Se o Direito julga o sujeito, e o sujeito desaparece… quem responde?”</p></div>
         </div>
     </section>
 
-    <!-- JUSTIÇA NEUROCOMPATÍVEL + DECLARAÇÃO DE BLUMENAU, agora na paleta laranja/vinho -->
+    <!-- JUSTIÇA NEUROCOMPATÍVEL + DECLARAÇÃO -->
     <section id="justica-neuro" class="container section">
         <h2 class="section-title">Justiça Neurocompatível</h2>
-        <div class="grid-2" style="gap: 2.5rem;">
-            <div>
-                <div style="background: #fffaf5; padding: 2rem; border-radius: 20px; border: 1px solid #edd3c7;">
-                    <p style="font-size: 1.6rem; font-family: 'Cormorant Garamond'; font-weight: 700; color: #8a3f2e;">princípios</p>
-                    <ul style="list-style: none; padding: 0; margin-top: 1.2rem;">
-                        <li style="margin-bottom: 1.2rem; display: flex; gap: 1rem;"><span style="background: #b86b4b; color: white; border-radius: 50%; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; font-weight: 700;">1</span> <strong>Continuidade subjetiva:</strong> só se pune quem mantém conexão psicológica com o autor do fato.</li>
-                        <li style="margin-bottom: 1.2rem; display: flex; gap: 1rem;"><span style="background: #b86b4b; color: white; border-radius: 50%; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; font-weight: 700;">2</span> <strong>Modificabilidade:</strong> a intervenção estatal deve visar o que o sujeito pode se tornar, não o que foi.</li>
-                        <li style="margin-bottom: 1.2rem; display: flex; gap: 1rem;"><span style="background: #b86b4b; color: white; border-radius: 50%; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; font-weight: 700;">3</span> <strong>Reparação coletiva:</strong> incluir vítimas, comunidades e redes de cuidado.</li>
-                    </ul>
-                    <p style="margin-top: 1.8rem; font-style: italic; color: #5e3529;">“Punir um corpo sem sujeito jurídico não é justiça. É necromancia jurídica.” — Manifesto ALAN, 2025</p>
-                </div>
+        <div class="grid-2">
+            <div style="background: #F0E7DD; padding: 2rem; border-radius: 20px; border: 1px solid #D2BFB0;">
+                <p style="font-size: 1.6rem; font-family: 'Cormorant Garamond'; font-weight: 700; color: #6F2E1F;">princípios</p>
+                <ul style="list-style: none; padding: 0; margin-top: 1.2rem;">
+                    <li style="margin-bottom: 1.2rem; display: flex; gap: 1rem;"><span style="background: #C1562B; color: white; border-radius: 50%; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center;">1</span> <strong>Continuidade subjetiva:</strong> só se pune quem mantém conexão psicológica com o autor do fato.</li>
+                    <li style="margin-bottom: 1.2rem; display: flex; gap: 1rem;"><span style="background: #C1562B; color: white; border-radius: 50%; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center;">2</span> <strong>Modificabilidade:</strong> a intervenção estatal deve visar o que o sujeito pode se tornar, não o que foi.</li>
+                    <li style="margin-bottom: 1.2rem; display: flex; gap: 1rem;"><span style="background: #C1562B; color: white; border-radius: 50%; width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center;">3</span> <strong>Reparação coletiva:</strong> incluir vítimas, comunidades e redes de cuidado.</li>
+                </ul>
+                <p style="margin-top: 1.8rem; font-style: italic;">“Punir um corpo sem sujeito jurídico não é justiça. É necromancia jurídica.”</p>
             </div>
-            <div style="background: #f3ddd2; padding: 2rem; border-radius: 20px; border-left: 8px solid #b1553a;">
-                <i class="fas fa-file-signature" style="font-size: 2.2rem; color: #8a3f2e;"></i>
-                <h3 style="font-size: 2rem; font-family: 'Cormorant Garamond'; margin: 0.5rem 0 1rem; color: #5e3529;">Declaração de Blumenau</h3>
+            <div style="background: #E8DCD0; padding: 2rem; border-radius: 20px; border-left: 8px solid #C1562B;">
+                <i class="fas fa-file-signature" style="font-size: 2.2rem; color: #6F2E1F;"></i>
+                <h3 style="font-size: 2rem; font-family: 'Cormorant Garamond'; margin: 0.5rem 0 1rem; color: #6F2E1F;">Declaração de Blumenau</h3>
                 <p><strong>17 de outubro de 2027</strong> — Encontro Latino-Americano de Justiça Neurocompatível.</p>
-                <p style="margin-top: 0.8rem;">“Nenhum cérebro é prisão perpétua. A identidade humana é plástica, frágil e transformável. A memória da vítima não se apaga com a amnésia do agressor. A punição só é legítima quando o réu de hoje é o mesmo sujeito que cometeu o fato ontem.”</p>
-                <p style="margin-top: 1.2rem; border-top: 1px solid #cfaa9b; padding-top: 1rem;"><i class="fas fa-seedling"></i> Assinada com gestos: um vaso de manjericão, um laudo que ousa dizer “não há mais réu”, uma vítima que não é redentora.</p>
+                <p>“Nenhum cérebro é prisão perpétua. A memória da vítima não se apaga com a amnésia do agressor. A punição só é legítima quando o réu de hoje é o mesmo sujeito que cometeu o fato ontem.”</p>
             </div>
         </div>
     </section>
 
-    <!-- NPSe: paleta consistente com a capa -->
+    <!-- NPSe -->
     <section id="npse" class="container section">
         <h2 class="section-title">NPSe — resposta não punitiva</h2>
-        <div class="grid-2" style="gap: 2.8rem;">
+        <div class="grid-2">
             <div>
-                <span style="background: #8a3f2e; color: white; padding: 0.2rem 1rem; border-radius: 30px; font-size: 0.8rem; letter-spacing: 1px;">PROPOSTA POR MENESES · 2014</span>
-                <p style="font-size: 1.8rem; font-family: 'Cormorant Garamond'; font-weight: 700; margin: 1rem 0 0.5rem; color: #6b382a;">Medida Neuropsicosocioeducativa</p>
-                <p style="margin-bottom: 1rem;">Inspirada no ECA, em práticas restaurativas indígenas e na jurisprudência da Corte IDH. Não é medida de segurança (rejeita a noção de periculosidade), nem pena alternativa. É <strong>reconhecimento:</strong> quando o sujeito já não é quem cometeu o crime e demonstra potencial reparador.</p>
-                <div style="background: #fbeee8; padding: 1.4rem; border-radius: 16px; border: 1px solid #e2c2b6;">
-                    <i class="fas fa-check-circle" style="color: #b86b4b;"></i> Acompanhamento neuropsicológico trimestral<br>
-                    <i class="fas fa-check-circle" style="color: #b86b4b;"></i> Oficinas de escuta ativa com adolescentes<br>
-                    <i class="fas fa-check-circle" style="color: #b86b4b;"></i> Viveiro comunitário · mediação restaurativa<br>
-                    <i class="fas fa-check-circle" style="color: #b86b4b;"></i> Relatórios de impacto subjetivo (acesso facultativo à vítima)
+                <span style="background: #6F2E1F; color: white; padding: 0.2rem 1rem; border-radius: 30px; font-size: 0.8rem;">PROPOSTA POR MENESES · 2014</span>
+                <p style="font-size: 1.8rem; font-family: 'Cormorant Garamond'; font-weight: 700; margin: 1rem 0 0.5rem; color: #6F2E1F;">Medida Neuropsicosocioeducativa</p>
+                <p>Inspirada no ECA, em práticas restaurativas indígenas e na jurisprudência da Corte IDH. É reconhecimento: quando o sujeito já não é quem cometeu o crime e demonstra potencial reparador.</p>
+                <div style="background: #F0E5DA; padding: 1.4rem; border-radius: 16px; margin-top: 1.5rem;">
+                    <i class="fas fa-check-circle" style="color: #C1562B;"></i> Acompanhamento neuropsicológico trimestral<br>
+                    <i class="fas fa-check-circle" style="color: #C1562B;"></i> Oficinas de escuta ativa com adolescentes<br>
+                    <i class="fas fa-check-circle" style="color: #C1562B;"></i> Viveiro comunitário · mediação restaurativa
                 </div>
             </div>
-            <div style="background: #b86b4b; color: #fffef7; padding: 2.2rem; border-radius: 28px; box-shadow: 0 8px 18px rgba(170,90,50,0.2);">
-                <i class="fas fa-seedling" style="font-size: 2.5rem; margin-bottom: 0.6rem; color: #ffddb0;"></i>
+            <div style="background: #C1562B; color: white; padding: 2.2rem; border-radius: 28px;">
+                <i class="fas fa-seedling" style="font-size: 2.5rem; margin-bottom: 0.6rem; color: #FFEAD2;"></i>
                 <p style="font-size: 1.5rem; font-family: 'Cormorant Garamond';">Núcleo de Justiça Neurocompatível</p>
-                <p style="margin-top: 0.5rem;">Blumenau, Santa Catarina. Criado em jul/2025, desdobramento da sentença do caso Rojas. Parceria: TJSC, FURB, Instituto NeuroVida, ALAN. Zero reincidência entre os 12 sujeitos sob NPSe (até out/2027).</p>
-                <p style="margin-top: 1.5rem; border-top: 1px solid #e6aa93; padding-top: 1.2rem;"><i class="fas fa-leaf"></i> “Se o cérebro pode voltar… por que o Direito não pode?”</p>
+                <p>Blumenau, SC. Criado em jul/2025. Zero reincidência entre os 12 sujeitos sob NPSe (até out/2027).</p>
+                <p style="margin-top: 1.5rem; border-top: 1px solid #E6AA93; padding-top: 1.2rem;"><i class="fas fa-leaf"></i> “Se o cérebro pode voltar… por que o Direito não pode?”</p>
             </div>
         </div>
     </section>
 
-    <!-- CRONOLOGIA DO CASO / ARQUIVO NJN -->
+    <!-- CRONOLOGIA -->
     <section class="container section">
         <h2 class="section-title">Arquivo NJN · Cronologia</h2>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
             <div>
-                <div class="timeline-item">
-                    <span style="font-weight: 700; color: #8a3f2e;">17/02/2024</span>
-                    <p>Crime: agressão contra Camila Ferreira.</p>
-                </div>
-                <div class="timeline-item">
-                    <span style="font-weight: 700; color: #8a3f2e;">05/03/2024</span>
-                    <p>Oitiva policial. Parada cardiorrespiratória. 58 min sem atividade cerebral. Morte clínica.</p>
-                </div>
-                <div class="timeline-item">
-                    <span style="font-weight: 700; color: #8a3f2e;">12/03/2024</span>
-                    <p>Retorno após protocolo NeuroSol‑γ. Amnésia retrógrada total.</p>
-                </div>
-                <div class="timeline-item">
-                    <span style="font-weight: 700; color: #8a3f2e;">28/10/2024</span>
-                    <p>Denúncia oferecida com ressalva pericial.</p>
-                </div>
-                <div class="timeline-item">
-                    <span style="font-weight: 700; color: #8a3f2e;">22/01/2026</span>
-                    <p>Audiência decisiva. Extinção da punibilidade.</p>
-                </div>
+                <div class="timeline-item"><span style="font-weight: 700; color: #6F2E1F;">17/02/2024</span><p>Crime: agressão contra Camila Ferreira.</p></div>
+                <div class="timeline-item"><span style="font-weight: 700; color: #6F2E1F;">05/03/2024</span><p>Oitiva. Parada cardíaca. 58 min. Morte clínica.</p></div>
+                <div class="timeline-item"><span style="font-weight: 700; color: #6F2E1F;">12/03/2024</span><p>Retorno NeuroSol‑γ. Amnésia retrógrada total.</p></div>
+                <div class="timeline-item"><span style="font-weight: 700; color: #6F2E1F;">28/10/2024</span><p>Denúncia com ressalva pericial.</p></div>
+                <div class="timeline-item"><span style="font-weight: 700; color: #6F2E1F;">22/01/2026</span><p>Audiência decisiva. Extinção da punibilidade.</p></div>
             </div>
-            <div style="background: #f8eae4; padding: 1.8rem; border-radius: 16px; border-left: 8px solid #b86b4b;">
-                <i class="fas fa-quote-left" style="color: #a1533a; font-size: 2rem;"></i>
-                <p style="font-size: 1.15rem; font-style: italic; margin: 0.5rem 0;">“A sentença aplica, por analogia, o art. 107, I, do CP – morte do agente. A pessoa jurídica se dissolveu. Não há mais réu, apenas um corpo que carrega as marcas de um passado que não lhe pertence.”</p>
+            <div style="background: #F0E5DA; padding: 1.8rem; border-radius: 16px; border-left: 8px solid #C1562B;">
+                <i class="fas fa-quote-left" style="color: #B44C2E; font-size: 2rem;"></i>
+                <p style="font-size: 1.15rem; font-style: italic;">“A sentença aplica, por analogia, o art. 107, I, do CP – morte do agente. A pessoa jurídica se dissolveu.”</p>
                 <p style="margin-top: 1rem;">— Dra. Mariana Alencar, 22 jan 2026</p>
             </div>
         </div>
     </section>
 
-    <!-- CARTA ABERTA + PROTOCOLO DE ESCUTA ATIVA (cores da capa) -->
+    <!-- CARTA ABERTA + PROTOCOLO -->
     <section class="container section" style="border-bottom: none;">
         <div class="grid-2">
-            <div style="background: #fbede5; padding: 2.5rem; border-radius: 24px; border: 1px solid #e6c2b2;">
-                <i class="fas fa-envelope-open-text" style="font-size: 2.4rem; color: #b1553a;"></i>
-                <h3 style="font-size: 2rem; font-family: 'Cormorant Garamond'; margin: 0.5rem 0; color: #5e3529;">Carta aberta</h3>
-                <p style="font-size: 1rem; line-height: 1.6;">“Você não precisa perdoar. Não precisa entender. Não precisa transformar seu silêncio em lição, sua cicatriz em símbolo. (...) Você é fim em si mesma. E isso já é suficiente.”</p>
-                <p style="margin-top: 1rem;">— Camila Ferreira dos Santos / Erigutemberg Meneses</p>
+            <div style="background: #F0E5DA; padding: 2.5rem; border-radius: 24px; border: 1px solid #D2BFB0;">
+                <i class="fas fa-envelope-open-text" style="font-size: 2.4rem; color: #C1562B;"></i>
+                <h3 style="font-size: 2rem; font-family: 'Cormorant Garamond'; margin: 0.5rem 0; color: #6F2E1F;">Carta aberta</h3>
+                <p>“Você não precisa perdoar. Não precisa transformar seu silêncio em lição. Você é fim em si mesma. E isso já é suficiente.”</p>
+                <p style="margin-top: 1rem;">— Camila Ferreira dos Santos</p>
             </div>
-            <div style="background: #f3dbd0; padding: 2.5rem; border-radius: 24px; border: 1px solid #dcb2a2;">
-                <i class="fas fa-ear-listen" style="font-size: 2.4rem; color: #b1553a;"></i>
-                <h3 style="font-size: 2rem; font-family: 'Cormorant Garamond'; margin: 0.5rem 0; color: #5e3529;">Protocolo de Escuta Ativa</h3>
-                <p>Princípio 1: Não transforme a dor em prova de valor moral. <br> Princípio 2: Desloque o foco do agressor para a experiência da vítima. <br> Princípio 5: A memória do corpo não se apaga com a amnésia alheia.</p>
-                <p style="margin-top: 1rem;"><i>“Escutar não é consertar.”</i> — Camila Ferreira</p>
+            <div style="background: #E8DCD0; padding: 2.5rem; border-radius: 24px; border: 1px solid #D2BFB0;">
+                <i class="fas fa-ear-listen" style="font-size: 2.4rem; color: #C1562B;"></i>
+                <h3 style="font-size: 2rem; font-family: 'Cormorant Garamond'; margin: 0.5rem 0; color: #6F2E1F;">Protocolo de Escuta Ativa</h3>
+                <p>Princípio 1: Não transforme a dor em prova de valor moral.<br> Princípio 5: A memória do corpo não se apaga com a amnésia alheia.</p>
+                <p style="margin-top: 1rem;"><i>“Escutar não é consertar.”</i></p>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER com o tom vinho/bordô da capa -->
     <footer class="footer">
         <div class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-            <i class="fas fa-leaf" style="font-size: 2.5rem; color: #fbd6bd; margin-bottom: 1rem;"></i>
-            <p style="font-size: 1.2rem; font-family: 'Cormorant Garamond'; color: #ffe4d5;">O Réu Fantasma: Justiça Neurocompatível e o Direito de Recomeçar</p>
-            <p style="margin: 1.5rem 0 0.8rem; max-width: 600px; color: #fbddd2;">“Diante da rigidez da estrutura, cresce o manjericão, símbolo da justiça que respeita o cérebro humano, cultivada com empatia, leveza e presença.”</p>
-            <div style="display: flex; gap: 2rem; margin-top: 1.8rem; flex-wrap: wrap; justify-content: center; color: #ffddd0;">
-                <span><i class="fas fa-brain"></i> neuroplasticidade</span>
-                <span><i class="fas fa-scale-balanced"></i> direito ao recomeço</span>
-                <span><i class="fas fa-hand-holding-heart"></i> escuta ativa</span>
-                <span><i class="fas fa-seedling"></i> manjericão</span>
-            </div>
-            <p style="margin-top: 2.5rem; font-size: 0.9rem; opacity: 0.9; color: #f5cfc0;">© 2026 Erigutemberg Meneses / Editora Dialética Literária. Site oficial – O Réu Fantasma.</p>
-            <p style="margin-top: 0.3rem; font-size: 0.85rem; color: #f5cfc0;">“A justiça começa quando paramos de exigir que as vítimas nos ensinem a ter esperança.” — C.F.S.</p>
+            <i class="fas fa-leaf" style="font-size: 2.5rem; color: #FFDCC2; margin-bottom: 1rem;"></i>
+            <p style="font-size: 1.2rem; font-family: 'Cormorant Garamond';">O Réu Fantasma: Justiça Neurocompatível e o Direito de Recomeçar</p>
+            <p style="margin: 1.5rem 0 0.8rem; max-width: 600px; color: #FFE2D1;">“Diante da rigidez da estrutura, cresce o manjericão, símbolo da justiça que respeita o cérebro humano.”</p>
+            <p style="margin-top: 2.5rem; font-size: 0.9rem;">© 2026 Erigutemberg Meneses / Editora Dialética Literária</p>
         </div>
     </footer>
 
-    <!-- QR code simbólico na paleta da capa -->
-    <div style="position: fixed; bottom: 30px; right: 30px; background: #fceae3; border-radius: 16px; padding: 0.6rem 1rem; box-shadow: 0 4px 12px rgba(130,60,40,0.1); border: 1px solid #dbb09b; backdrop-filter: blur(2px);">
-        <i class="fas fa-qrcode" style="color: #8a3f2e; font-size: 1.5rem;"></i>
-        <span style="font-size: 0.75rem; display: block; margin-top: 2px; color: #4d3028;">acesse vídeos, laudos</span>
+    <div style="position: fixed; bottom: 30px; right: 30px; background: #F0E5DA; border-radius: 16px; padding: 0.6rem 1rem; border: 1px solid #C98A70;">
+        <i class="fas fa-qrcode" style="color: #6F2E1F; font-size: 1.5rem;"></i>
+        <span style="font-size: 0.75rem; display: block; color: #3A2C24;">acesse vídeos, laudos</span>
     </div>
 </body>
 </html>
